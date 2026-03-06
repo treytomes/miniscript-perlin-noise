@@ -185,4 +185,4 @@ end function
 
 if locals == globals then runDemo
 
-return Perlin
+return PerlinNoise
