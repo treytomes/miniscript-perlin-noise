@@ -124,7 +124,7 @@ end function
 // @param xOffset {number} X offset (for scrolling/animation)
 // @param yOffset {number} Y offset (for scrolling/animation)
 // @returns {number} Noise value in [0, amplitude]
-fractalNoise = function(x, y, scale, octaves, persistence, amplitude = 1, xOffset = 0, yOffset = 0)
+PerlinNoise.fractalNoise = function(x, y, scale, octaves, persistence, amplitude = 1, xOffset = 0, yOffset = 0)
     total = 0
     amp = 1
     freq = 1
@@ -163,7 +163,7 @@ runDemo = function
 
     for y in range(h - 1)
         for x in range(w - 1)
-            n = fractalNoise(x, y, scale, octaves, persistence, amplitude)
+            n = PerlinNoise.fractalNoise(x, y, scale, octaves, persistence, amplitude)
 
             if n < 0.35 then
                 clr = color.fromList([0, 0, floor(100 + n * 120)])
