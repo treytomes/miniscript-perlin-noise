@@ -4,7 +4,7 @@ A deterministic 2D **Perlin noise** implementation for **MiniScript / Mini Micro
 
 This module is designed for procedural terrain, textures, clouds, water, and other smoothly varying signals commonly used in games and simulations.
 
-[Screenshot](perlin-noise.png)
+![Screenshot](perlin-noise.png)
 
 ---
 
